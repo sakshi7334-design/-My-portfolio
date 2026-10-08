@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sakshi Kumari - 1st Year B.Tech CSE student at JECRC University. Exploring programming, technology, and building foundational skills in software engineering.">
+  <meta name="keywords" content="Sakshi Kumari, Portfolio, B.Tech CSE, JECRC University, C Programming, Prompt Engineering, Student Developer">
+  <meta name="author" content="Sakshi Kumari">
+  <title>Sakshi Kumari | B.Tech CSE Student & Tech Explorer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Background Canvas for Interactive Constellation / Particle Field -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Glowing Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-monogram">SK</span>
+        <div class="brand-text">
+          <span class="brand-name">Sakshi Kumari</span>
+          <span class="brand-status"><span class="status-dot"></span> B.Tech CSE @ JECRC</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#bookshelf" class="nav-link">Bookshelf</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Color Theme" title="Toggle Light/Dark Theme">
+          <i data-lucide="moon" class="theme-icon moon-icon"></i>
+          <i data-lucide="sun" class="theme-icon sun-icon"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Connect</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="menu-toggle" class="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Animated Status Pill -->
+          <div class="hero-badge reveal">
+            <span class="badge-pulse"></span>
+            <span class="badge-text">1st Year, 1st Sem &bull; JECRC University</span>
+          </div>
+
+          <!-- Main Entrance Title -->
+          <h1 class="hero-title reveal delay-1">
+            <span class="greeting-pre">Hi, I'm</span>
+            <span class="name-gradient">Sakshi Kumari.</span>
+          </h1>
+
+          <!-- Tagline -->
+          <p class="hero-tagline reveal delay-2">
+            A CSE student learning, exploring &amp; building my way into tech.
+          </p>
+
+          <!-- Core Summary / Philosophy -->
+          <p class="hero-description reveal delay-3">
+            At the beginning of an exciting journey. Exploring programming fundamentals, 
+            experimenting with prompt engineering, and nurturing curiosity one line of code at a time.
+          </p>
+
+          <!-- Call To Action Buttons -->
+          <div class="hero-cta-group reveal delay-4">
+            <a href="#about" class="btn btn-primary">
+              <span>About Me</span>
+              <i data-lucide="arrow-down" class="btn-icon"></i>
+            </a>
+            <a href="#journey" class="btn btn-secondary">
+              <span>My Journey</span>
+              <i data-lucide="compass" class="btn-icon"></i>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <span>Get in Touch</span>
+              <i data-lucide="send" class="btn-icon"></i>
+            </a>
+          </div>
+
+          <!-- Quick Highlight Metrics / Signals -->
+          <div class="hero-highlights reveal delay-5">
+            <div class="highlight-item">
+              <span class="highlight-val">B.Tech CSE</span>
+              <span class="highlight-lbl">JECRC University</span>
+            </div>
+            <div class="highlight-sep"></div>
+            <div class="highlight-item">
+              <span class="highlight-val">C &amp; Prompt Eng.</span>
+              <span class="highlight-lbl">Current Learning Focus</span>
+            </div>
+            <div class="highlight-sep"></div>
+            <div class="highlight-item">
+              <span class="highlight-val">Curious Mind</span>
+              <span class="highlight-lbl">Books &amp; DIY Crafting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Interactive Card -->
+        <div class="hero-visual reveal delay-3">
+          <div class="glass-card hero-feature-card">
+            <div class="card-glow-accent"></div>
+            
+            <div class="code-terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">sakshi_profile.c</span>
+              <span class="terminal-lang">C &bull; UTF-8</span>
+            </div>
+
+            <div class="terminal-body">
+              <div class="code-line"><span class="token-comment">// Starting the software engineering journey</span></div>
+              <div class="code-line"><span class="token-keyword">#include</span> <span class="token-string">&lt;stdio.h&gt;</span></div>
+              <div class="code-line">&nbsp;</div>
+              <div class="code-line"><span class="token-type">int</span> <span class="token-func">main</span>() {</div>
+              <div class="code-line indent-1"><span class="token-type">char</span>* student = <span class="token-string">"Sakshi Kumari"</span>;</div>
+              <div class="code-line indent-1"><span class="token-type">char</span>* college = <span class="token-string">"JECRC University"</span>;</div>
+              <div class="code-line indent-1"><span class="token-type">char</span>* goal = <span class="token-string">"Good Software Engineer"</span>;</div>
+              <div class="code-line">&nbsp;</div>
+              <div class="code-line indent-1"><span class="token-func">printf</span>(<span class="token-string">"Building fundamentals daily...\n"</span>);</div>
+              <div class="code-line indent-1"><span class="token-keyword">return</span> <span class="token-number">0</span>;</div>
+              <div class="code-line">}</div>
+            </div>
+
+            <!-- Floating Interactive Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon-wrap violet">
+                <i data-lucide="sparkles"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Prompt Engineering</span>
+                <span class="badge-sub">Exploring LLMs</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon-wrap emerald">
+                <i data-lucide="terminal"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">C Fundamentals</span>
+                <span class="badge-sub">Logic &amp; Problem Solving</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-middle-right">
+              <div class="badge-icon-wrap rose">
+                <i data-lucide="book-open"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Atomic Habits</span>
+                <span class="badge-sub">Currently Reading</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-sub-title">Getting To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Story & Mindset -->
+          <div class="about-text-col reveal delay-1">
+            <div class="glass-card about-main-card">
+              <div class="quote-icon-wrap">
+                <i data-lucide="quote"></i>
+              </div>
+
+              <h3 class="card-heading">Curious, Grounded &amp; Eager to Learn</h3>
+              
+              <p class="lead-text">
+                I am currently pursuing my <strong>B.Tech in Computer Science &amp; Engineering</strong> 
+                at JECRC University, actively laying the stones for my future in technology and software development.
+              </p>
+
+              <p class="body-text">
+                Rather than claiming years of industry experience that I haven't lived yet, I take pride in where I am right now: 
+                <strong>at the true start of a lifelong craft</strong>. I am currently learning C programming to grasp how memory, 
+                logic, and algorithms interact under the hood, while discovering how to harness modern prompt engineering 
+                to augment creativity and problem solving.
+              </p>
+
+              <p class="body-text">
+                Alongside technical skills, I am consciously practicing and improving my 
+                <strong>communication and interpersonal skills</strong>—because I believe a great software engineer 
+                is someone who can both write clean logic and articulate ideas with empathy and clarity.
+              </p>
+
+              <div class="mindset-callout">
+                <div class="callout-icon">
+                  <i data-lucide="compass"></i>
+                </div>
+                <div class="callout-content">
+                  <h4>My Guiding Philosophy</h4>
+                  <p>
+                    My goal is to become a genuinely good software engineer. I am still exploring the vast horizons of 
+                    tech—and I want this space to reflect my authentic journey of learning, experimenting, and growing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Personal Interests & Hobbies -->
+          <div class="about-cards-col reveal delay-2">
+            <h3 class="column-subtitle">Beyond the Code Editor</h3>
+            
+            <div class="interests-grid">
+              
+              <!-- Interest 1: Books -->
+              <div class="glass-card interest-card">
+                <div class="interest-header">
+                  <div class="interest-icon-circle blue">
+                    <i data-lucide="book-marked"></i>
+                  </div>
+                  <span class="interest-tag">Habit &amp; Growth</span>
+                </div>
+                <h4 class="interest-title">Reading Books</h4>
+                <p class="interest-desc">
+                  Curious about perspectives that shape life, personal psychology, and habits. Currently diving into 
+                  <em>Atomic Habits</em> to build daily 1% compounding discipline.
+                </p>
+              </div>
+
+              <!-- Interest 2: DIY Projects -->
+              <div class="glass-card interest-card">
+                <div class="interest-header">
+                  <div class="interest-icon-circle coral">
+                    <i data-lucide="palette"></i>
+                  </div>
+                  <span class="interest-tag">Hands-on Creativity</span>
+                </div>
+                <h4 class="interest-title">Creating DIY Projects</h4>
+                <p class="interest-desc">
+                  I love turning raw materials and everyday ideas into creative physical crafts. It trains my eye 
+                  for aesthetics, precision, and problem-solving through design.
+                </p>
+              </div>
+
+              <!-- Interest 3: Badminton -->
+              <div class="glass-card interest-card">
+                <div class="interest-header">
+                  <div class="interest-icon-circle mint">
+                    <i data-lucide="activity"></i>
+                  </div>
+                  <span class="interest-tag">Focus &amp; Reflexes</span>
+                </div>
+                <h4 class="interest-title">Playing Badminton</h4>
+                <p class="interest-desc">
+                  Stepping onto the court keeps my reflexes sharp and my mind energized. It teaches anticipation, 
+                  quick decision-making, and staying calm under competitive rallies.
+                </p>
+              </div>
+
+              <!-- Interest 4: Communication -->
+              <div class="glass-card interest-card">
+                <div class="interest-header">
+                  <div class="interest-icon-circle amber">
+                    <i data-lucide="message-square-heart"></i>
+                  </div>
+                  <span class="interest-tag">Self Development</span>
+                </div>
+                <h4 class="interest-title">Communication &amp; Expression</h4>
+                <p class="interest-desc">
+                  Actively working on articulating ideas with confidence, active listening, and collaborating 
+                  effectively in team environments.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-sub-title">Academic Milestones &amp; Dedication</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            A steady trajectory defined by consistency, perseverance during dedicated preparation, and a strong analytical base.
+          </p>
+        </div>
+
+        <div class="education-timeline reveal delay-1">
+
+          <!-- Card 1: B.Tech CSE (Current) -->
+          <div class="timeline-item current-milestone">
+            <div class="timeline-marker">
+              <div class="marker-dot pulse"></div>
+            </div>
+            <div class="glass-card edu-card">
+              <div class="edu-card-top">
+                <div class="edu-badge active-badge">Current Academic Journey</div>
+                <span class="edu-year">2024 &mdash; Present</span>
+              </div>
+              <h3 class="edu-degree">B.Tech &mdash; Computer Science &amp; Engineering</h3>
+              <h4 class="edu-institute">
+                <i data-lucide="map-pin"></i> JECRC University, Jaipur
+              </h4>
+              <p class="edu-status-tag">1st Year, 1st Semester</p>
+              <p class="edu-summary">
+                Immersed in computing fundamentals, computational logic, and foundational programming. Building 
+                strong mathematical principles and exploring computer systems from first principles.
+              </p>
+              <div class="edu-tags">
+                <span class="tag">Computer Science</span>
+                <span class="tag">Algorithms &amp; Logic</span>
+                <span class="tag">C Programming</span>
+                <span class="tag">Engineering Mathematics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Dedicated JEE Preparation Year (Positive & Professional Framing) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="glass-card edu-card prep-card">
+              <div class="edu-card-top">
+                <div class="edu-badge prep-badge">Dedication &amp; Stamina</div>
+                <span class="edu-year">Intensive Prep Period</span>
+              </div>
+              <h3 class="edu-degree">Dedicated Preparation &amp; Analytical Growth Year</h3>
+              <h4 class="edu-institute">
+                <i data-lucide="target"></i> Self-Directed Preparation for JEE Main
+              </h4>
+              <div class="edu-metric-highlight">
+                <span class="metric-score">80 Percentile</span>
+                <span class="metric-label">JEE Main Examination</span>
+              </div>
+              <p class="edu-summary">
+                Took a deliberate one-year period of rigorous, focused preparation for competitive engineering exams. 
+                This year cultivated deep intellectual discipline, long-hour problem-solving endurance, 
+                and emotional grit when tackling challenging Physics, Chemistry, and Advanced Mathematics problems.
+              </p>
+              <div class="edu-keynotes">
+                <div class="keynote-pill">
+                  <i data-lucide="check-circle-2"></i> High Analytical Resilience
+                </div>
+                <div class="keynote-pill">
+                  <i data-lucide="check-circle-2"></i> Structured Self-Study Habits
+                </div>
+                <div class="keynote-pill">
+                  <i data-lucide="check-circle-2"></i> Deep Quantitative Foundation
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Senior Secondary (Class 12) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="glass-card edu-card">
+              <div class="edu-card-top">
+                <div class="edu-badge past-badge">Senior Secondary</div>
+                <span class="edu-year">High School</span>
+              </div>
+              <h3 class="edu-degree">Class XII &mdash; Science Stream</h3>
+              <h4 class="edu-institute">
+                <i data-lucide="award"></i> Higher Secondary Education
+              </h4>
+              <div class="edu-metric-highlight">
+                <span class="metric-score">75.9%</span>
+                <span class="metric-label">Board Examination Result</span>
+              </div>
+              <p class="edu-summary">
+                Focused on core scientific streams including Physics, Chemistry, and Mathematics, forming the 
+                quantitative bedrock for engineering studies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Secondary (Class 10) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="glass-card edu-card">
+              <div class="edu-card-top">
+                <div class="edu-badge past-badge">Secondary Education</div>
+                <span class="edu-year">Secondary School</span>
+              </div>
+              <h3 class="edu-degree">Class X &mdash; Secondary School Certificate</h3>
+              <h4 class="edu-institute">
+                <i data-lucide="award"></i> Secondary Board Education
+              </h4>
+              <div class="edu-metric-highlight">
+                <span class="metric-score">92.8%</span>
+                <span class="metric-label">Outstanding Academic Performance</span>
+              </div>
+              <p class="edu-summary">
+                Achieved exceptional academic results, demonstrating strong work ethic, dedication, and 
+                intellectual curiosity across broad foundational subjects.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS & CURRENT LEARNING SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-sub-title">Foundations &amp; Work in Progress</span>
+          <h2 class="section-title">Skills &amp; Currently Learning</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Honest, transparent representation of what I'm actively studying, experimenting with, and practicing.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Technical (Currently Learning) -->
+          <div class="glass-card skill-card reveal delay-1">
+            <div class="skill-card-header">
+              <div class="skill-category-icon violet">
+                <i data-lucide="code-2"></i>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Technical Foundations</h3>
+                <span class="status-indicator-tag learning">Currently Learning</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Item 1: C Programming -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">C Programming</span>
+                    <span class="badge-status-pill">In Progress</span>
+                  </div>
+                  <span class="skill-desc">Syntax, variables, control flow, functions, loops &amp; foundational problem-solving logic.</span>
+                </div>
+                <div class="progress-bar-container">
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill fill-c" style="width: 58%;"></div>
+                  </div>
+                  <div class="progress-labels">
+                    <span>Syntax &amp; Logic</span>
+                    <span>Exploring Pointers &amp; Memory</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Prompt Engineering -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Prompt Engineering</span>
+                    <span class="badge-status-pill">In Progress</span>
+                  </div>
+                  <span class="skill-desc">Context framing, few-shot prompting, persona constraints, and AI-assisted workflow experiments.</span>
+                </div>
+                <div class="progress-bar-container">
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill fill-prompt" style="width: 65%;"></div>
+                  </div>
+                  <div class="progress-labels">
+                    <span>Prompt Architecture</span>
+                    <span>Workflow Integration</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Core Engineering & Interpersonal Skills -->
+          <div class="glass-card skill-card reveal delay-2">
+            <div class="skill-card-header">
+              <div class="skill-category-icon emerald">
+                <i data-lucide="brain"></i>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Growth &amp; Soft Skills</h3>
+                <span class="status-indicator-tag active">Daily Practice</span>
+              </div>
+            </div>
+
+            <div class="soft-skills-grid">
+              
+              <div class="soft-skill-pill">
+                <div class="pill-icon"><i data-lucide="message-square"></i></div>
+                <div class="pill-body">
+                  <span class="pill-title">Communication Skills</span>
+                  <span class="pill-status">Actively Improving</span>
+                  <p class="pill-note">Practicing clear verbal expression, presentation confidence, and structured writing.</p>
+                </div>
+              </div>
+
+              <div class="soft-skill-pill">
+                <div class="pill-icon"><i data-lucide="search"></i></div>
+                <div class="pill-body">
+                  <span class="pill-title">Curiosity &amp; Exploration</span>
+                  <span class="pill-status">Core Trait</span>
+                  <p class="pill-note">Unafraid to ask "why", deconstruct complex problems, and explore new tools.</p>
+                </div>
+              </div>
+
+              <div class="soft-skill-pill">
+                <div class="pill-icon"><i data-lucide="layers"></i></div>
+                <div class="pill-body">
+                  <span class="pill-title">Analytical Thinking</span>
+                  <span class="pill-status">Engineering Mindset</span>
+                  <p class="pill-note">Honed through intensive preparation in mathematics, logic puzzles, and algorithmic flowcharts.</p>
+                </div>
+              </div>
+
+              <div class="soft-skill-pill">
+                <div class="pill-icon"><i data-lucide="users"></i></div>
+                <div class="pill-body">
+                  <span class="pill-title">Collaboration &amp; Teamwork</span>
+                  <span class="pill-status">Developing</span>
+                  <p class="pill-note">Eager to participate in peer group coding, hackathons, and creative ideation.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Campus Experience & Community -->
+          <div class="glass-card skill-card campus-card reveal delay-3">
+            <div class="skill-card-header">
+              <div class="skill-category-icon amber">
+                <i data-lucide="building-2"></i>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Campus Involvement</h3>
+                <span class="status-indicator-tag applied">In Review</span>
+              </div>
+            </div>
+
+            <div class="campus-content">
+              <div class="campus-highlight-box">
+                <div class="club-badge">
+                  <i data-lucide="code"></i>
+                </div>
+                <div class="club-details">
+                  <h4 class="club-name">Coding Culture Club</h4>
+                  <span class="club-sub">JECRC University Student Organization</span>
+                  <span class="club-status-badge">
+                    <span class="status-dot-pulse"></span> Application Submitted
+                  </span>
+                </div>
+              </div>
+
+              <p class="campus-description">
+                I have applied for membership in JECRC's <strong>Coding Culture Club</strong> to surround myself 
+                with passionate builders, participate in campus coding workshops, collaborate on hackathon teams, 
+                and learn directly from senior peers.
+              </p>
+
+              <div class="campus-perks">
+                <span class="perk"><i data-lucide="check"></i> Peer Code Reviews</span>
+                <span class="perk"><i data-lucide="check"></i> Collaborative Projects</span>
+                <span class="perk"><i data-lucide="check"></i> Tech Discussions</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROJECTS: IN THE LAB / COMING SOON SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-sub-title">Building The First Foundations</span>
+          <h2 class="section-title">Projects &amp; Experiments</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Honest reflection of my current stage: I am learning, experimenting, and building foundational skills 
+            before jumping into full-scale production applications.
+          </p>
+        </div>
+
+        <!-- Big Honest Showcase Banner -->
+        <div class="glass-card coming-soon-banner reveal delay-1">
+          <div class="banner-badge">
+            <i data-lucide="sparkles"></i> Work In Progress
+          </div>
+          <h3 class="banner-heading">Coming Soon &mdash; Brewing in the Lab</h3>
+          <p class="banner-lead">
+            &ldquo;Currently learning, experimenting, and building my foundation.&rdquo;
+          </p>
+          <p class="banner-subtext">
+            As a 1st-year student, I believe in genuine growth over exaggerated claims. Rather than listing templated 
+            projects, here is an authentic preview of what I am currently tinkering with and preparing to launch.
+          </p>
+        </div>
+
+        <!-- Preview Grid of Experiments -->
+        <div class="projects-preview-grid">
+          
+          <!-- Experiment 1: C Programming Console Tools -->
+          <div class="glass-card exp-card reveal delay-2">
+            <div class="exp-card-header">
+              <div class="exp-icon-wrap violet">
+                <i data-lucide="terminal"></i>
+              </div>
+              <span class="exp-tag">In Active Development</span>
+            </div>
+            <h4 class="exp-title">C Console Utilities &amp; Logic Puzzles</h4>
+            <p class="exp-desc">
+              Writing terminal-based programs in C to master fundamental programming structures: 
+              number systems, mathematical logic solvers, string manipulations, and menu-driven console applications.
+            </p>
+            <div class="exp-footer">
+              <div class="tech-tag-list">
+                <span class="tech-tag">C Language</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">Console I/O</span>
+              </div>
+              <span class="exp-stage">Foundations</span>
+            </div>
+          </div>
+
+          <!-- Experiment 2: Prompt Engineering Playbook -->
+          <div class="glass-card exp-card reveal delay-3">
+            <div class="exp-card-header">
+              <div class="exp-icon-wrap cyan">
+                <i data-lucide="cpu"></i>
+              </div>
+              <span class="exp-tag">Experimenting</span>
+            </div>
+            <h4 class="exp-title">Prompt Engineering Templates &amp; Workflows</h4>
+            <p class="exp-desc">
+              Testing structured system prompts, chain-of-thought prompting, role assignments, and 
+              AI-assisted learning techniques to turn LLMs into personalized study tutors and coding companions.
+            </p>
+            <div class="exp-footer">
+              <div class="tech-tag-list">
+                <span class="tech-tag">Prompt Design</span>
+                <span class="tech-tag">LLM Tools</span>
+                <span class="tech-tag">AI Workflows</span>
+              </div>
+              <span class="exp-stage">Exploration</span>
+            </div>
+          </div>
+
+          <!-- Experiment 3: Personal Digital Garden -->
+          <div class="glass-card exp-card reveal delay-4">
+            <div class="exp-card-header">
+              <div class="exp-icon-wrap rose">
+                <i data-lucide="layout"></i>
+              </div>
+              <span class="exp-tag">Live &amp; Evolving</span>
+            </div>
+            <h4 class="exp-title">Personal Portfolio &amp; Learning Hub</h4>
+            <p class="exp-desc">
+              This very portfolio! Designed from scratch with semantic HTML5, modern CSS3 animations, 
+              responsive design principles, and interactive JavaScript canvases to document my growth publicly.
+            </p>
+            <div class="exp-footer">
+              <div class="tech-tag-list">
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+              <span class="exp-stage">Version 1.0</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Terminal Simulator for Fun -->
+        <div class="interactive-simulator-wrap reveal delay-3">
+          <div class="glass-card simulator-card">
+            <div class="sim-header">
+              <div class="sim-title-group">
+                <i data-lucide="play-circle" class="sim-icon"></i>
+                <span>Interactive Learning Preview &bull; C Console Simulator</span>
+              </div>
+              <span class="sim-pill">Click to Run Code</span>
+            </div>
+            <div class="sim-console">
+              <div class="sim-code-preview">
+                <code><span class="token-comment">// Click 'Run' to simulate the learning process</span>
+<span class="token-keyword">#include</span> &lt;stdio.h&gt;
+
+<span class="token-type">int</span> main() {
+    <span class="token-func">printf</span>(<span class="token-string">"Sakshi is compiling: Curiosity + Consistency = Growth!\n"</span>);
+    <span class="token-keyword">return</span> <span class="token-number">0</span>;
+}</code>
+              </div>
+              <div class="sim-actions">
+                <button id="run-sim-btn" class="btn btn-sm btn-primary">
+                  <i data-lucide="play"></i> Run Code
+                </button>
+                <div id="sim-output" class="sim-output-box">
+                  <span class="cursor-blink">&gt; Terminal ready. Click 'Run Code' to execute.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- READING & PERSONAL INTERESTS (BOOKSHELF) SECTION -->
+    <section id="bookshelf" class="section bookshelf-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-sub-title">Curiosity, Habits &amp; Perspectives</span>
+          <h2 class="section-title">Reading &amp; Personal Interests</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            A small window into the ideas that inspire me outside the classroom. Reading broadens my perspective, 
+            shapes my work ethic, and reminds me that life is an ongoing experiment.
+          </p>
+        </div>
+
+        <!-- Book Cards Grid -->
+        <div class="bookshelf-grid">
+
+          <!-- Book 1: Atomic Habits -->
+          <div class="glass-card book-card currently-reading reveal delay-1">
+            <div class="book-spine-accent spine-atomic"></div>
+            <div class="book-card-content">
+              <div class="book-badge-row">
+                <span class="book-status-badge reading">
+                  <span class="pulse-dot"></span> Currently Reading
+                </span>
+                <span class="book-genre">Productivity &amp; Mindset</span>
+              </div>
+
+              <div class="book-main-info">
+                <div class="book-icon-frame">
+                  <i data-lucide="book-open"></i>
+                </div>
+                <div>
+                  <h3 class="book-title">Atomic Habits</h3>
+                  <h4 class="book-author">by James Clear</h4>
+                </div>
+              </div>
+
+              <p class="book-reflection">
+                &ldquo;You do not rise to the level of your goals. You fall to the level of your systems.&rdquo;
+              </p>
+
+              <div class="book-takeaway">
+                <span class="takeaway-label">Key Takeaway for My Studies:</span>
+                <p>
+                  Focusing on becoming 1% better every day in my coding practice, instead of feeling overwhelmed by how much there is to learn.
+                </p>
+              </div>
+
+              <div class="reading-progress-track">
+                <div class="reading-progress-fill" style="width: 45%;"></div>
+              </div>
+              <span class="reading-progress-text">In Progress &bull; Chapter by Chapter</span>
+            </div>
+          </div>
+
+          <!-- Book 2: The Subtle Art of Not Giving a F*ck -->
+          <div class="glass-card book-card completed reveal delay-2">
+            <div class="book-spine-accent spine-subtle"></div>
+            <div class="book-card-content">
+              <div class="book-badge-row">
+                <span class="book-status-badge completed-badge">
+                  <i data-lucide="check"></i> Completed
+                </span>
+                <span class="book-genre">Self Reflection</span>
+              </div>
+
+              <div class="book-main-info">
+                <div class="book-icon-frame">
+                  <i data-lucide="bookmark-check"></i>
+                </div>
+                <div>
+                  <h3 class="book-title">The Subtle Art of Not Giving a F*ck</h3>
+                  <h4 class="book-author">by Mark Manson</h4>
+                </div>
+              </div>
+
+              <p class="book-reflection">
+                A refreshing take on emotional clarity and prioritising the problems that are truly worth solving.
+              </p>
+
+              <div class="book-takeaway">
+                <span class="takeaway-label">Personal Reflection:</span>
+                <p>
+                  Taught me not to fear failure or getting stuck on a programming bug—struggling through challenges is where real learning happens.
+                </p>
+              </div>
+
+              <div class="reading-progress-track">
+                <div class="reading-progress-fill full" style="width: 100%;"></div>
+              </div>
+              <span class="reading-progress-text">Finished Reading &bull; Highly Recommended</span>
+            </div>
+          </div>
+
+          <!-- Book 3: One Indian Girl -->
+          <div class="glass-card book-card completed reveal delay-3">
+            <div class="book-spine-accent spine-girl"></div>
+            <div class="book-card-content">
+              <div class="book-badge-row">
+                <span class="book-status-badge completed-badge">
+                  <i data-lucide="check"></i> Completed
+                </span>
+                <span class="book-genre">Contemporary Fiction</span>
+              </div>
+
+              <div class="book-main-info">
+                <div class="book-icon-frame">
+                  <i data-lucide="bookmark-check"></i>
+                </div>
+                <div>
+                  <h3 class="book-title">One Indian Girl</h3>
+                  <h4 class="book-author">by Chetan Bhagat</h4>
+                </div>
+              </div>
+
+              <p class="book-reflection">
+                An engaging narrative examining modern career aspirations, societal expectations, and personal freedom.
+              </p>
+
+              <div class="book-takeaway">
+                <span class="takeaway-label">Personal Reflection:</span>
+                <p>
+                  Reinforced the value of having independent opinions, career ambitions, and staying true to oneself while navigating different life stages.
+                </p>
+              </div>
+
+              <div class="reading-progress-track">
+                <div class="reading-progress-fill full" style="width: 100%;"></div>
+              </div>
+              <span class="reading-progress-text">Finished Reading &bull; Thought-Provoking</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Creative Hobbies Interactive Showcase (DIY & Badminton) -->
+        <div class="creative-passions-wrap reveal delay-2">
+          <div class="glass-card passions-card">
+            <div class="passions-grid">
+              
+              <div class="passion-col">
+                <div class="passion-icon-box rose">
+                  <i data-lucide="scissors"></i>
+                </div>
+                <h4>DIY &amp; Creative Crafts</h4>
+                <p>
+                  Transforming simple craft paper, waste materials, and colors into functional artwork. 
+                  Building with my own hands fuels spatial creativity that complements algorithmic problem-solving.
+                </p>
+              </div>
+
+              <div class="passion-divider"></div>
+
+              <div class="passion-col">
+                <div class="passion-icon-box green">
+                  <i data-lucide="shield-check"></i>
+                </div>
+                <h4>Badminton Court</h4>
+                <p>
+                  Badminton is where I recharge. Quick footwork, hand-eye coordination, and tactical smash placements 
+                  teach focus, agility, and quick recovery after a lost point.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- MY JOURNEY / GROWTH & CAREER DIRECTION SECTION -->
+    <section id="journey" class="section journey-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-sub-title">Trajectory &amp; Roadmap</span>
+          <h2 class="section-title">My Journey &amp; Growth</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Where I started, where I stand today, and how I look forward to building my path in software engineering.
+          </p>
+        </div>
+
+        <!-- Career Direction Clarity Card -->
+        <div class="glass-card career-direction-card reveal delay-1">
+          <div class="direction-badge">
+            <i data-lucide="compass"></i> Open &amp; Exploratory
+          </div>
+          <h3 class="direction-heading">Career Direction: Curious, Fundamental &amp; Exploratory</h3>
+          <p class="direction-text">
+            My career direction is currently exploratory. Rather than prematurely narrowing myself into a single sub-field 
+            before understanding the breadth of computer science, I am dedicating my early college semesters to 
+            <strong>building rock-solid programming fundamentals, mathematical logic, and algorithmic thinking</strong>.
+          </p>
+          <p class="direction-subtext">
+            Whether software engineering takes me towards systems programming, modern web platforms, intelligent tools, 
+            or data engineering, I want my foundation to be strong enough to adapt to anything.
+          </p>
+        </div>
+
+        <!-- Growth Roadmap Timeline -->
+        <div class="growth-steps reveal delay-2">
+          
+          <div class="growth-step-card">
+            <div class="step-num">01</div>
+            <div class="step-icon-wrap"><i data-lucide="award"></i></div>
+            <h4 class="step-title">School Foundations</h4>
+            <p class="step-desc">Strong performance (92.8% in 10th &amp; 75.9% in 12th) sparking initial fascination with science and math.</p>
+            <span class="step-tag past">Foundation Laid</span>
+          </div>
+
+          <div class="growth-step-card">
+            <div class="step-num">02</div>
+            <div class="step-icon-wrap"><i data-lucide="flame"></i></div>
+            <h4 class="step-title">Dedicated Preparation</h4>
+            <p class="step-desc">Intensive JEE preparation year (80 Percentile) forging mental endurance, analytical patience, and grit.</p>
+            <span class="step-tag past">Grit &amp; Stamina</span>
+          </div>
+
+          <div class="growth-step-card current-step">
+            <div class="step-num">03</div>
+            <div class="step-icon-wrap"><i data-lucide="rocket"></i></div>
+            <h4 class="step-title">B.Tech CSE @ JECRC</h4>
+            <p class="step-desc">Starting 1st year, diving into C programming, prompt engineering, and applying for Coding Culture Club.</p>
+            <span class="step-tag present">Active Now</span>
+          </div>
+
+          <div class="growth-step-card">
+            <div class="step-num">04</div>
+            <div class="step-icon-wrap"><i data-lucide="sparkles"></i></div>
+            <h4 class="step-title">Software Engineer</h4>
+            <p class="step-desc">Building real-world applications, solving meaningful problems, collaborating, and becoming an impactful engineer.</p>
+            <span class="step-tag future">Horizon</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-sub-title">Let's Connect &amp; Say Hello</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Whether you want to discuss a book recommendation, share guidance for a first-year student, 
+            or simply say hi—I'd love to hear from you!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels Column -->
+          <div class="contact-channels reveal delay-1">
+            <div class="glass-card channel-card">
+              <h3 class="channel-heading">Connect Directly</h3>
+              <p class="channel-sub">Feel free to reach out via email or connect with me across professional platforms.</p>
+
+              <div class="channel-list">
+                
+                <!-- Email Item with Copy Button -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap email-icon">
+                    <i data-lucide="mail"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Email Address</span>
+                    <a href="mailto:sakshi.kumari.cse@example.com" class="channel-val" id="email-text">
+                      sakshi.kumari.cse@example.com
+                    </a>
+                  </div>
+                  <button id="copy-email-btn" class="copy-btn" title="Copy Email Address">
+                    <i data-lucide="copy"></i>
+                  </button>
+                </div>
+
+                <!-- LinkedIn Placeholder -->
+                <a href="https://linkedin.com/in/sakshi-kumari-placeholder" target="_blank" rel="noopener noreferrer" class="channel-item interactive-link">
+                  <div class="channel-icon-wrap linkedin-icon">
+                    <i data-lucide="linkedin"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">LinkedIn</span>
+                    <span class="channel-val">linkedin.com/in/sakshi-kumari</span>
+                  </div>
+                  <div class="link-arrow">
+                    <i data-lucide="external-link"></i>
+                  </div>
+                </a>
+
+                <!-- GitHub Placeholder -->
+                <a href="https://github.com/sakshi-kumari-placeholder" target="_blank" rel="noopener noreferrer" class="channel-item interactive-link">
+                  <div class="channel-icon-wrap github-icon">
+                    <i data-lucide="github"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">GitHub</span>
+                    <span class="channel-val">github.com/sakshi-kumari</span>
+                  </div>
+                  <div class="link-arrow">
+                    <i data-lucide="external-link"></i>
+                  </div>
+                </a>
+
+                <!-- Location / Campus -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap loc-icon">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">University Campus</span>
+                    <span class="channel-val">JECRC University &bull; Jaipur, Rajasthan</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Toast for Copy Notification -->
+              <div id="copy-toast" class="copy-toast">
+                <i data-lucide="check-circle"></i> Email copied to clipboard!
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-wrap reveal delay-2">
+            <div class="glass-card form-card">
+              <h3 class="form-heading">Send a Message</h3>
+              <p class="form-sub">Drop a thought or suggestion. I check messages regularly.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="user-name">Your Name</label>
+                  <div class="input-icon-wrap">
+                    <i data-lucide="user" class="field-icon"></i>
+                    <input type="text" id="user-name" name="name" placeholder="e.g. Aditi Sharma" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-email">Your Email</label>
+                  <div class="input-icon-wrap">
+                    <i data-lucide="mail" class="field-icon"></i>
+                    <input type="email" id="user-email" name="email" placeholder="e.g. aditi@example.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-subject">Topic / Subject</label>
+                  <div class="input-icon-wrap">
+                    <i data-lucide="message-square" class="field-icon"></i>
+                    <input type="text" id="user-subject" name="subject" placeholder="e.g. Book Recommendation / General Connect" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-message">Your Message</label>
+                  <div class="input-icon-wrap textarea-wrap">
+                    <textarea id="user-message" name="message" rows="4" placeholder="Hello Sakshi, I enjoyed your portfolio and wanted to share..." required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary submit-btn">
+                  <span>Send Message</span>
+                  <i data-lucide="send" class="btn-icon"></i>
+                </button>
+
+                <div id="form-feedback" class="form-feedback"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- SUBTLE & ANIMATED FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <!-- Central Animated Philosophy Motto -->
+      <div class="footer-motto-wrap">
+        <div class="motto-sparkle-left">✦</div>
+        <p class="footer-motto">
+          <span class="motto-part part-1">Still learning.</span>
+          <span class="motto-part part-2">Still exploring.</span>
+          <span class="motto-part part-3">Still becoming.</span>
+        </p>
+        <div class="motto-sparkle-right">✦</div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <p>&copy; <span id="current-year">2024</span> Sakshi Kumari &bull; 1st Year B.Tech CSE, JECRC University</p>
+          <p class="footer-subtext">Designed with curiosity, creativity, and clean code.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#hero">Back to Top <i data-lucide="arrow-up" class="inline-icon"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
